@@ -1,4 +1,4 @@
-### forma q vimos:
+/### forma q vimos:
 qnd vc cria arrays vc define tamanhos fixos
 
 `int[] numeros = new int[5];`

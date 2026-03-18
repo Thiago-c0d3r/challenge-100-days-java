@@ -24,4 +24,8 @@ EX:
 			no começo, mais simples; se for mais pro final, mais
 			complexo e gastará mais tempo;
 
+#### EQUALS vs ==
+equals= compara conteúdo;
+"==" = compara conteúdo;
+
 

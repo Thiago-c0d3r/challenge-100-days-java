@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "day 2/ArrayList  (iniciando em Java Collections).md",
+                "file": "day 4/HashMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ArrayList  (iniciando em Java Collections)"
+              "title": "HashMap"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e2452e72adcd85fa",
@@ -187,8 +188,10 @@
   "active": "b490764eb17d58dd",
   "lastOpenFiles": [
     "day 3/Busca Linear.md",
-    "Drawing 2026-03-17 19.06.47.excalidraw.md",
+    "day 4/HashMap.md",
+    "day 4",
     "day 2/ArrayList  (iniciando em Java Collections).md",
+    "Drawing 2026-03-17 19.06.47.excalidraw.md",
     "day 3",
     "day 1/Arrays.md"
   ]

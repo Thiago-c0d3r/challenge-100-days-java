@@ -1,4 +1,5 @@
 package day2;
+
 import java.util.ArrayList;
 
 
@@ -22,7 +23,7 @@ public class ArrayListDay2 {
             System.out.println(animais.get(i));
         }
         //percorrendo usando forEach
-        for ( String animal : animais ) {
+        for (String animal : animais) {
             System.out.println(animal);
         }
         //*array usa ".length" ArrayList usa ".size()"

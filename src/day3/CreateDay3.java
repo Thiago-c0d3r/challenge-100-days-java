@@ -3,7 +3,7 @@ package day3;
 import java.util.ArrayList;
 
 public class CreateDay3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         ArrayList<String> biblioteca = new ArrayList<>();
 
@@ -13,8 +13,8 @@ public class CreateDay3 {
         biblioteca.add("Introdução Machine Learning");
 
         String busca = "Fundamentos de Java";
-        int comparacoes=0;
-        boolean encontrado=false;
+        int comparacoes = 0;
+        boolean encontrado = false;
 
         for (String livro : biblioteca) {
             comparacoes++;
@@ -23,13 +23,15 @@ public class CreateDay3 {
                 encontrado = true;
                 break;
             }
-
-            if (encontrado) {
-                System.out.println("encontrado!");
-            } else {
-                System.out.println("não encontrado!");
-            }
-
-            System.out.println("Total de itens pesquisados: " + comparacoes);
         }
-}}
+
+        if (encontrado) {
+            System.out.println("encontrado!");
+        } else {
+            System.out.println("não encontrado!");
+        }
+
+        System.out.println("Total de itens pesquisados: " + comparacoes);
+
+    }
+}
