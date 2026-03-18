@@ -45,4 +45,5 @@ public class Day1Arrays {
         System.out.println("números pares = "+pares);
         System.out.println("números ímpares = "+impares);
     }
+
 }
