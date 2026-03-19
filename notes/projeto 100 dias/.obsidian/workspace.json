@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "day 4/HashMap.md",
+                "file": "day 5/Separação de Responsabilidades.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HashMap"
+              "title": "Separação de Responsabilidades"
             }
           }
         ]
@@ -188,11 +188,13 @@
   "active": "b490764eb17d58dd",
   "lastOpenFiles": [
     "day 3/Busca Linear.md",
+    "day 5/Separação de Responsabilidades.md",
+    "day 5",
     "day 4/HashMap.md",
-    "day 4",
     "day 2/ArrayList  (iniciando em Java Collections).md",
+    "day 1/Arrays.md",
+    "day 4",
     "Drawing 2026-03-17 19.06.47.excalidraw.md",
-    "day 3",
-    "day 1/Arrays.md"
+    "day 3"
   ]
 }
