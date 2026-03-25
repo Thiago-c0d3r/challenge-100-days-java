@@ -4,46 +4,94 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
-        int contador = 1;
-        ArrayList <Aluno> listaAlunos = new ArrayList<>();
-        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite quantos alunos deseja analisar: ");
-        int qntdeAlunos= scan.nextInt();
-        scan.nextLine();
 
-        for (int i=0; i<qntdeAlunos; i++){
+        public static Aluno criarAluno(Scanner scan){
+
             Aluno a = new Aluno();
 
-            System.out.println("Digite o nome do Aluno"+contador+": ");
+            System.out.println("Digite o nome do aluno");
             a.nome = scan.nextLine();
 
-            System.out.println("Digite a 1° nota");
+            System.out.println("Digite a 1° nota: ");
             a.nota1 = scan.nextDouble();
 
             System.out.println("Digite a 2° nota: ");
             a.nota2 = scan.nextDouble();
-
-            listaAlunos.add(a);
             scan.nextLine();
-            contador++;
-        }
-        contador=1;
-        System.out.println("====LISTA ALUNOS====");
-        for (Aluno aluno:listaAlunos){
-            System.out.println("ALUNO "+contador);
-            System.out.println("Nome: "+aluno.nome);
-            System.out.println("Média: "+aluno.calcMedia());
 
-            if (aluno.verificarAprovacao()){
-                System.out.println("Status: Aprovado!");
-            }else{
-                System.out.println("Status: Reprovado!");
-            }
-            contador++;
-            System.out.println("");
+            return a;//vai retornar o objeto criado;
+
         }
+
+        public static void getAluno(Aluno a){
+
+            System.out.println("====SITUAÇÃO de "+a.nome+"====");
+            System.out.println("Nome: " + a.nome);
+            System.out.println("Média " + a.calcMedia());
+
+            if(a.verificarAprovacao()){
+                System.out.println("Aprovado!");
+            }else{
+                System.out.println("Reprovado");
+            }
+            System.out.println("================");
+
+        }
+
+        public static int contarAprovados (ArrayList<Aluno> lista){
+            int contador = 0;
+
+            for (Aluno a : lista){
+
+                if (a.verificarAprovacao()){
+                    contador++;
+                }
+
+            }
+
+            return contador;
+
+        }
+
+        public static int contarReprovados (ArrayList<Aluno> lista){
+
+            int contador = 0;
+
+            for (Aluno a : lista){
+
+                if (!a.verificarAprovacao()){
+                    contador++;
+                }
+
+            }
+
+            return contador;
+
+        }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Aluno> listaAlunos = new ArrayList<>();
+
+        System.out.println("Digite quantos alunos deseja analisar: ");
+        int qntdeAlunos = scan.nextInt();
+        scan.nextLine();
+
+        for (int i = 0; i < qntdeAlunos; i++){
+            Aluno a = criarAluno(scan);
+            listaAlunos.add(a);
+        }
+
+        for (Aluno a : listaAlunos){
+            getAluno(a);
+        }
+
+        int totalAprovados = contarAprovados(listaAlunos);
+        System.out.println("Total aprovados: " + totalAprovados);
+
+        int totalReprovados = contarReprovados(listaAlunos);
+        System.out.println("Total reprovados: " + totalReprovados);
+
 
     }
 }
