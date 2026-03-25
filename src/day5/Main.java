@@ -19,6 +19,8 @@ public class Main {
         Cadastro.cadastrar(email, senha);
 
         // login
+        boolean sucesso=false;
+        while (!sucesso){
         System.out.println("\n=== LOGIN ===");
 
         System.out.print("Email: ");
@@ -27,14 +29,15 @@ public class Main {
         System.out.print("Senha: ");
         String senhaLogin = scan.nextLine();
 
-        boolean sucesso = Login.autenticar(emailLogin, senhaLogin);
+        sucesso = Login.autenticar(emailLogin, senhaLogin);
 
         if (sucesso) {
-            System.out.println("Login OK");
+            System.out.println("Login realizado com sucesso!");
         } else {
-            System.out.println("Login inválido");
+            System.out.println("Login inválido. Tente novamente!");
         }
 
+        }
         scan.close();
     }
 }
