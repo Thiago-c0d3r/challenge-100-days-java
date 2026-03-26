@@ -8,17 +8,17 @@ public class Main {
 
     public static Aluno criarAluno(Scanner scan){
 
-        Aluno a = new Aluno();
-
         System.out.println("Digite o nome do aluno");
-        a.setNome(scan.nextLine());
+        String nome = scan.nextLine();
 
         System.out.println("Digite a 1° nota: ");
-        a.setNota1(scan.nextDouble());
+        double nota1 = scan.nextDouble();
 
         System.out.println("Digite a 2° nota: ");
-        a.setNota2(scan.nextDouble());
+        double nota2 = scan.nextDouble();
         scan.nextLine();
+
+        Aluno a = new Aluno(nome,nota1,nota2);
 
         return a;//vai retornar o objeto criado;
 

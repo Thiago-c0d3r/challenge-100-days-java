@@ -62,4 +62,25 @@ public class Aluno {
         }
 
     }
+
+    public Aluno(String nome, double nota1, double nota2) {
+        if(nome.equals("")){
+            System.out.println("Nome inválido!");
+        }else{
+            this.nome = nome;
+        }
+        if(nota1<0 || nota1>10){
+            System.out.println("Nota inválida!");
+        }else{
+            this.nota1 = nota1;
+        }
+
+        if(nota1<0 || nota1>10){
+            System.out.println("Nota inválida!");
+        }else{
+            this.nota2 = nota2;
+        }
+
+
+    }
 }
