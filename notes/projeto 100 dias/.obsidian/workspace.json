@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discover SRP.md",
+                "file": "day 8/Encapsulamento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Discover SRP"
+              "title": "Encapsulamento"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d0604b1f56913944",
@@ -183,7 +184,10 @@
   },
   "active": "41b9a590d39aef7a",
   "lastOpenFiles": [
-    "Discover SRP.md",
+    "day 7/Discover SRP.md",
+    "day 8/Encapsulamento.md",
+    "day 8",
+    "day 8",
     "day 7"
   ]
 }
