@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "day 9/Construtores.md",
+                "file": "day 10/Herança.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Construtores"
+              "title": "Herança"
             }
           }
         ]
@@ -184,8 +184,10 @@
   },
   "active": "41b9a590d39aef7a",
   "lastOpenFiles": [
-    "day 8/Encapsulamento.md",
     "day 9/Construtores.md",
+    "day 10/Herança.md",
+    "day 10",
+    "day 8/Encapsulamento.md",
     "day 9",
     "Sem título.md",
     "day 7/Discover SRP.md",
