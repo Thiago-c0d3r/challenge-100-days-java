@@ -32,4 +32,11 @@ public class Mago extends Personagem {
                 poderMagico = 5;
         }
     }
+
+
+
+    @Override
+    double tomarDano(double dano) {
+        return 0;
+    }
 }

@@ -9,11 +9,13 @@ public class Guerreiro extends Personagem {
         setHp(140);
     }
 
-    void tomarDano(double dano) {
+    @Override
+    double tomarDano(double dano) {
         double escudoAbsorve= dano * 0.2;
         double danoSofrido = dano - escudoAbsorve;
         System.out.println( "Dano absorvido: " + escudoAbsorve);
         hpAtual = getHp() - danoSofrido;
+        return danoSofrido;
     }
     
 

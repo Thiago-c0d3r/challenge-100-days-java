@@ -68,11 +68,11 @@ abstract class Personagem {
     void exibirStatus(){
         System.out.println( "Nome: " + getNome() );
         System.out.println( "Nível: " + getNivel() );
-        System.out.println( "HP: " + getNivel() );
+        System.out.println( "HP: " + getHp() );
         System.out.println( "Dano: " + getDano() );
         System.out.println( "Status: " + isVivo());
     }
 
 
-
+    abstract double tomarDano(double dano);
 }
