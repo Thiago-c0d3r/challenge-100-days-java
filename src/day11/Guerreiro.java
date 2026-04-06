@@ -9,7 +9,7 @@ public class Guerreiro extends Personagem {
         setHp(140);
     }
 
-    @Override
+
     double tomarDano(double dano) {
         double escudoAbsorve= dano * 0.2;
         double danoSofrido = dano - escudoAbsorve;

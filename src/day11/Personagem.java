@@ -74,5 +74,5 @@ abstract class Personagem {
     }
 
 
-    abstract double tomarDano(double dano);
+
 }

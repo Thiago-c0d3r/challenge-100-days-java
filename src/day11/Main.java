@@ -31,6 +31,8 @@ public class Main {
             b.exibirStatus();
         }
 
+        System.out.println("Quem vc deseja enfrentar?");
+
 
 
 

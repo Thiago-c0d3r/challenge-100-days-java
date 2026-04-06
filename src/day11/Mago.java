@@ -35,8 +35,5 @@ public class Mago extends Personagem {
 
 
 
-    @Override
-    double tomarDano(double dano) {
-        return 0;
-    }
+
 }
