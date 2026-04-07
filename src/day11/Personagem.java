@@ -4,7 +4,7 @@ abstract class Personagem {
     private String nome;
     private int nivel = 0;
     private double hp = 100;
-    private double dano = 4;
+    private double dano = 1;
     private boolean vivo = hp > 0;
 
 
@@ -46,6 +46,10 @@ abstract class Personagem {
 
     public void setVivo(boolean vivo) {
         this.vivo = vivo;
+    }
+
+    public double calcularDano(){
+        return nivel * 5;
     }
 
     double tomarDano(int dano){

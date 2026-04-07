@@ -24,14 +24,18 @@ public class Main {
             System.out.println("Guerreiro criado");
             a.setNome(nome);
             a.exibirStatus();
-        } else if (escolha == 2) {
+
             Personagem b = new Mago(80, 20);
+
+        } else if (escolha == 2) {
+            Personagem a = new Mago(80, 20);
             System.out.println("Mago criado");
             b.setNome(nome);
             b.exibirStatus();
+            Personagem b = new Guerreiro(140,10);
         }
 
-        System.out.println("Quem vc deseja enfrentar?");
+        System.out.println("que os jogos comecem!");
 
 
 
