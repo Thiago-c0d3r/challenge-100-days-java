@@ -7,12 +7,13 @@ public class Main {
         Pagamento boleto = new Boleto("Esabele Matos", 350.59,
                 "34191.79001 01043.510047" ,"15/04/2026");
 
-        Pagamento pix     = new Pix("Leandro Martinho", 89.90,
-                "carlos@email.com");
+        Pagamento pix     = new Pix("Leandro Martinho", 89.99,
+                "thiago@email.com");
 
         Pagamento cartao  = new CartaoCredito("Thiago Sousa", 1200.0,
                 "1234567890123456", 6);
 
+        //array para todos valores serem acessador por loop
         Pagamento[] pagamentos = { boleto, pix, cartao };
 
         for (Pagamento p : pagamentos) {
@@ -27,8 +28,9 @@ public class Main {
         for (Pagamento p : pagamentos){
             total += p.getValor();
         }
-        System.out.println("Total da fatura: R$ "+
-                            String.format("%.2f",total));
+
+        System.out.printf("Total da fatura: R$ %.2f",total);
+        System.out.println();
     }
 
 }
